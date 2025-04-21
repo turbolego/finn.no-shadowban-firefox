@@ -1,9 +1,15 @@
 {
   "manifest_version": 2,
   "name": "Finn.no Shadowban",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hides listings from specific users on Finn.no",
   "author": "turbolego@gmail.com",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{89362369-1d98-42dc-a62a-817997eeb69e}",
+      "strict_min_version": "79.0"
+    }
+  },
   "permissions": [
     "activeTab",
     "tabs",
@@ -27,8 +33,13 @@
   "content_scripts": [
     {
       "matches": ["*://*.finn.no/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["mobile-ui.css"]
     }
+  ],
+  "web_accessible_resources": [
+    "images/icon48.png",
+    "mobile-settings.html"
   ],
   "icons": {
     "16": "images/icon16.png",
