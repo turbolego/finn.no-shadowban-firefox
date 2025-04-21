@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Finn.no Shadowban",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Hides listings from specific users on Finn.no",
   "author": "turbolego@gmail.com",
   "permissions": [
