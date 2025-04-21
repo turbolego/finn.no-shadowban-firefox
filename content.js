@@ -405,7 +405,15 @@ function addMobileSettingsButton() {
   // Create a floating button in the bottom right corner
   const settingsButton = document.createElement('button');
   settingsButton.id = 'shadowban-settings-button';
-  settingsButton.innerHTML = '<img src="' + browser.runtime.getURL('images/icon48.png') + '" alt="Settings" width="24" height="24">';
+
+  // Replace innerHTML with proper DOM manipulation
+  const iconImage = document.createElement('img');
+  iconImage.src = browser.runtime.getURL('images/icon48.png');
+  iconImage.alt = 'Settings';
+  iconImage.width = 24;
+  iconImage.height = 24;
+  settingsButton.appendChild(iconImage);
+
   settingsButton.className = 'shadowban-settings-button';
 
   settingsButton.addEventListener('click', () => {
@@ -477,3 +485,4 @@ if (isMobile) {
     }
   });
 }
+
