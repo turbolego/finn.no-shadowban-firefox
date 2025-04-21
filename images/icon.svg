@@ -1,0 +1,6 @@
+<!-- SVG icon for the extension -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#0063fb" rx="20" ry="20"/>
+  <text x="64" y="80" font-family="Arial, sans-serif" font-size="100" text-anchor="middle" fill="white">F</text>
+  <line x1="30" y1="30" x2="98" y2="98" stroke="red" stroke-width="10"/>
+</svg>
